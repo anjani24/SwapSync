@@ -1,0 +1,14 @@
+flowchart TD
+    A[Open SwapSync] --> B{Choose an action}
+    B -->|Browse| C[Filter room listings]
+    B -->|Post a room| D[Enter current room details]
+    B -->|Find who wants my room| E[Enter hostel and room]
+    B -->|Circular swaps| F[Enter current room and preferences]
+    C --> G[Review possible matches]
+    D --> H[Submit swap listing]
+    E --> I[Review reverse matches]
+    F --> J[Review possible three-person loops]
+    G --> K[Contact student through WhatsApp]
+    I --> K
+    J --> K
+    H --> L[Listing appears on swap board]
